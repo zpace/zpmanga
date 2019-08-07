@@ -1,0 +1,8 @@
+[run]
+branch = true
+
+[report]
+omit =
+    python/zpmanga/etc/*
+    python/zpmanga/utils/*
+    python/zpmanga/tests/*
