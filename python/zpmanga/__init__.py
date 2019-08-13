@@ -18,3 +18,8 @@ log = get_logger(NAME)
 
 
 __version__ = '1.0.0'
+
+
+from .core import exceptions
+from .elines import _elines as elines
+from .spec_tools import _spec_tools as spec_tools

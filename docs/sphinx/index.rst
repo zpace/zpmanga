@@ -12,7 +12,7 @@ This is the Sphinx documentation for the SDSS Python product zpmanga
 Introduction
 ------------
 
-A description of the package can go here.
+`zpmanga` is a package with some useful code that I use for interacting with MaNGA data.
 
 * :ref:`What's new in zpmanga? <changelog>`
 * :ref:`Introduction to zpmanga <intro>`

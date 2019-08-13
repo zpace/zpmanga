@@ -11,18 +11,18 @@
 from __future__ import print_function, division, absolute_import
 
 
-class ZpmangaError(Exception):
-    """A custom core Zpmanga exception"""
+class ZPMaNGAError(Exception):
+    """A custom core ZPMaNGA exception"""
 
     def __init__(self, message=None):
 
         message = 'There has been an error' \
             if not message else message
 
-        super(ZpmangaError, self).__init__(message)
+        super(ZPMaNGAError, self).__init__(message)
 
 
-class ZpmangaNotImplemented(ZpmangaError):
+class ZPMaNGANotImplemented(ZPMaNGAError):
     """A custom exception for not yet implemented features."""
 
     def __init__(self, message=None):
@@ -30,45 +30,45 @@ class ZpmangaNotImplemented(ZpmangaError):
         message = 'This feature is not implemented yet.' \
             if not message else message
 
-        super(ZpmangaNotImplemented, self).__init__(message)
+        super(ZPMaNGANotImplemented, self).__init__(message)
 
 
-class ZpmangaAPIError(ZpmangaError):
+class ZPMaNGAAPIError(ZPMaNGAError):
     """A custom exception for API errors"""
 
     def __init__(self, message=None):
         if not message:
-            message = 'Error with Http Response from Zpmanga API'
+            message = 'Error with Http Response from ZPMaNGA API'
         else:
-            message = 'Http response error from Zpmanga API. {0}'.format(message)
+            message = 'Http response error from ZPMaNGA API. {0}'.format(message)
 
-        super(ZpmangaAPIError, self).__init__(message)
+        super(ZPMaNGAAPIError, self).__init__(message)
 
 
-class ZpmangaApiAuthError(ZpmangaAPIError):
+class ZPMaNGAApiAuthError(ZPMaNGAAPIError):
     """A custom exception for API authentication errors"""
     pass
 
 
-class ZpmangaMissingDependency(ZpmangaError):
+class ZPMaNGAMissingDependency(ZPMaNGAError):
     """A custom exception for missing dependencies."""
     pass
 
 
-class ZpmangaWarning(Warning):
-    """Base warning for Zpmanga."""
+class ZPMaNGAWarning(Warning):
+    """Base warning for ZPMaNGA."""
 
 
-class ZpmangaUserWarning(UserWarning, ZpmangaWarning):
+class ZPMaNGAUserWarning(UserWarning, ZPMaNGAWarning):
     """The primary warning class."""
     pass
 
 
-class ZpmangaSkippedTestWarning(ZpmangaUserWarning):
+class ZPMaNGASkippedTestWarning(ZPMaNGAUserWarning):
     """A warning for when a test is skipped."""
     pass
 
 
-class ZpmangaDeprecationWarning(ZpmangaUserWarning):
+class ZPMaNGADeprecationWarning(ZPMaNGAUserWarning):
     """A warning for deprecated features."""
     pass
