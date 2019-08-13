@@ -1,2 +1,1 @@
-import _elines 
-import lineratios
+__all__ = ['lineratios', 'elines']

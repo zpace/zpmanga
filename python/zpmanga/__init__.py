@@ -21,5 +21,8 @@ __version__ = '1.0.0'
 
 
 from .core import exceptions
-from .elines import _elines as elines
-from .spec_tools import _spec_tools as spec_tools
+from .elines import *
+from .spec_tools import *
+from .abundances import *
+from .lineratios import *
+from .manga_tools import *

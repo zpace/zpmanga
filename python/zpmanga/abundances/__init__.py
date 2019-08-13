@@ -1,1 +1,1 @@
-import _abundances
+__all__ = ['abundances']
